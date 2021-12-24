@@ -190,6 +190,7 @@ nav #icon{
 
 #services #services_text th{
 	text-align: center;
+	vertical-align: top;
 	padding: 5px 5%;
 }
 
