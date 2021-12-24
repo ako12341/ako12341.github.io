@@ -12,6 +12,10 @@
 			$('#icon').click(function(){
 				$('nav').toggleClass('show');
 				$('ul').toggleClass('show');
+				$('body').toggleClass('show');
+				$('img').toggleClass('show');
+				$('video').toggleClass('show');
+				$('#about_us').toggleClass('show');
 			})
 		});
 	</script>
@@ -20,12 +24,16 @@
 	<nav>
 
 		<label class="logo">Haven</label>
-		<ul>
-			<li><a class="active" href="#">მთავარი</a></li>
-			<li><a href="#">ჩვენს შესახებ</a></li>
-			<li><a href="#">მომსახურება</a></li>
-			<li><a href="#">გალერეა</a></li>
-		</ul>
+		<form>
+			<ul>
+				<li><a class="active" href="index.html">მთავარი</a></li>
+				<li><a href="#about_us">ჩვენს შესახებ</a></li>
+				<li><a href="#">მომსახურება</a></li>
+				<li><a href="contact.html">კონტაქტი</a></li>
+				<li><a href="#">გალერეა</a></li>
+			</ul>
+		</form>
+		
 		<label id="icon">
 			<i class="fas fa-bars"></i>
 		</label>
@@ -38,35 +46,9 @@
 			<p>ჩვენი ვებ-საიტები საუკეთესო საშუალებაა თქვენი მომხმარებლებისა და კლიენტებისთვის ღირებული სერვისის მიწოდებისთვის და ეს შესანიშნავი საშუალებაა რათა ისინი დაბრუნდენ თქვენთან როცა დასჭირდებათ თქვენი პროდუქტი. <br> <br>თუ თქვენ გეგმავთ ბაზრის და ბიზნესის განვიტარებას, ვებ-საიტი უნდა იყოს თქვენი პირველი პრიორიტეტი. <br> <br> ჩვენ გვესმის მიზეზები და თქვენი საჭიროება, თუ როგორ შეიძლება შევუწყოთ ხელი თქვენი ბიზნესის განვითარებას.</p>
 		</div>		
 	</div>
-	<video autoplay controls poster="thumbnail.JPG">
+	<video autoplay controls poster="thumbnail.jpg">
 		<source src="Skydiving_Montage.mp4" type="video/mp4">
 	</video>
 
-	<div id="contact">
-		<form onsubmit="validationForm(); event.preventDefult()">
-			<h1>დაგვიკავშირდით</h1>
-			<label for="name">სახელი:</label>
-			<input type="text" id="name" placeholder="სახელი">
-			<br>
-			<small class="error"></small>
-
-			<label for="email">იმეილი:</label>
-			<input type="text" id="email" placeholder="იმეილი">
-			<br>
-			<small class="error"></small>
-
-			<label for="message">შეტყობინება:</label>
-			<textarea id="message" placeholder="შეტყობინება" rows="6"></textarea>
-			<br>
-			<small class="error"></small>
-
-			<div class="center">
-				<input type="submit" value="გაგზავნა">
-				<p id="success"></p>
-			</div>
-		</form>
-	</div>	
-
-	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
