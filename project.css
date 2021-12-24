@@ -201,6 +201,7 @@ nav #icon{
 					FOOTER
 ================================================*/
 footer {
+	position: absolute;
 	background: #2f3640;
 	height: auto;
 	width: 100%;
@@ -273,9 +274,6 @@ footer {
 		float: right;
 		padding-top: 10px;
 	}
-	footer{
-		position: absolute;
-	}
 }
 
 /*================================================
@@ -290,9 +288,6 @@ footer {
 		padding-top: 40px;
 		margin-left: 100px;
 
-	}
-	footer{
-		position: absolute;
 	}
 }
 
@@ -314,9 +309,6 @@ footer {
 	}
 	#contact form h1 {
 		font-size: 2em;
-	}
-	footer{
-		position: absolute;
 	}
 }
 /*================================================
