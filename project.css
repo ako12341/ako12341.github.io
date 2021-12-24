@@ -9,11 +9,19 @@ body {
 	font-family: montserrat;
 	
 }
-
 img {
 	width: 100%;
 }
 
+video{
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 20px;
+}
+
+/*================================================
+				NAVIGATION
+================================================*/
 nav{
 	height: 80px;
 	widows: 100%;
@@ -64,12 +72,13 @@ nav #icon{
 	display: none;
 }
 
-video{
-	width: 80%;
-	margin-left: 10%;
-	padding-top: 20px;
-}
+/*================================================
+				NAVIGATION
+================================================*/
 
+/*================================================
+				ABOUT US
+================================================*/
 #about_us img{
 	width: 50%;
 	float: right;
@@ -86,6 +95,13 @@ video{
 	padding-top: 100px;
 }
 
+/*================================================
+				ABOUT US
+================================================*/
+
+/*================================================
+				CONTACT
+================================================*/
 #contact h1 {
 	text-align: center;
 	color: white;
@@ -131,7 +147,7 @@ video{
 
 .error{
 	color: red;
-	margin-left: 20%;
+	margin-left: 17%;
 }
 
 .error-border{
@@ -142,7 +158,110 @@ video{
 	color: yellow;
 	text-align: center;
 }
+/*================================================
+				CONTACT
+================================================*/
 
+/*================================================
+				SERVICES
+================================================*/
+#services table{
+	width: 70%;
+	margin-left: 15%;
+}
+
+#services h1{
+	margin-top: 40px;
+	text-align: center;
+}
+
+#services #services_img{
+	margin-left: 12%;
+}
+
+#services #services_img img {
+	width: 75%;
+	padding: 10px 2%;
+}
+
+#services #services_head_text{
+	font-size: 25px;
+}
+
+#services #services_text th{
+	text-align: center;
+	padding: 5px 5%;
+}
+
+/*================================================
+				SERVICES
+================================================*/
+
+/*================================================
+					FOOTER
+================================================*/
+footer {
+	position: absolute;
+	background: #2f3640;
+	height: auto;
+	width: 100%;
+	color: white;
+	margin-top: 20px;
+}
+
+.social{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social li{
+	margin: 1% 1%;
+	padding: 1%;
+}
+
+.social a{
+	text-decoration: none;
+	color: white;
+	border-style: none;
+}
+
+.social a i{
+	font-size: 200%;
+	transition: color .4s ease;
+}
+
+.social a:hover i{
+	color: aqua;
+}
+
+.footer_bottom{
+	background: #000;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer_bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.footer_bottom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+/*================================================
+					FOOTER
+================================================*/
+
+/*================================================
+			SCREEN MIN-WIDTH: 1050PX;
+================================================*/
 @media (min-width: 1050px){
 	#about_us .text{
 		padding-top: 100px;
@@ -157,6 +276,13 @@ video{
 	}
 }
 
+/*================================================
+			SCREEN MIN-WIDTH: 1050PX;
+================================================*/
+
+/*================================================
+			SCREEN MAX-WIDTH: 1050PX;
+================================================*/
 @media (max-width: 1050px){
 	#about_us .text{
 		padding-top: 40px;
@@ -165,6 +291,13 @@ video{
 	}
 }
 
+/*================================================
+			SCREEN MAX-WIDTH: 1050PX;
+================================================*/
+
+/*================================================
+			SCREEN MAX-WIDTH: 900PX;
+================================================*/
 @media (max-width:  900px){
 	nav a{
 		font-size: 13px;
@@ -178,7 +311,13 @@ video{
 		font-size: 2em;
 	}
 }
+/*================================================
+			SCREEN MAX-WIDTH: 900PX;
+================================================*/
 
+/*================================================
+			SCREEN MAX-WIDTH: 750PX;
+================================================*/
 @media (max-width: 750px){
 	nav #icon{
 		display: block;
@@ -197,7 +336,7 @@ video{
 	nav ul {
 		position: absolute;
 		width: 100%;
-		height: 47vh;
+		height: 100vh;
 		background-color: #2f3640;	
 		top: 80px;
 		left: -100%;
@@ -241,8 +380,50 @@ video{
 		visibility: hidden;
 	}
 
+	h1.show{
+		visibility: hidden;
+	}
+
+	table.show{
+		visibility: hidden;
+	}
+
 	nav.show{
 		background-color: #3498db;
 	}
 
+	#services table{
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#services h1{
+		margin-top: 40px;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#services #services_img{
+		margin-left: 1%;
+	}
+
+	#services #services_img img {
+		width: 50%;
+		padding: 5px 1%;
+	}
+
+	#services #services_head_text{
+		font-size: 15px;
+	}
+
+	#services #services_text th{
+		text-align: center;
+		padding: 5px 5%;
+		font-size: 10px;
+	}
+
 }
+/*================================================
+			SCREEN MAX-WIDTH: 750PX;
+================================================*/
