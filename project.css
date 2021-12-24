@@ -273,6 +273,9 @@ footer {
 		float: right;
 		padding-top: 10px;
 	}
+	footer{
+		position: absolute;
+	}
 }
 
 /*================================================
@@ -287,6 +290,9 @@ footer {
 		padding-top: 40px;
 		margin-left: 100px;
 
+	}
+	footer{
+		position: absolute;
 	}
 }
 
@@ -309,6 +315,9 @@ footer {
 	#contact form h1 {
 		font-size: 2em;
 	}
+	footer{
+		position: absolute;
+	}
 }
 /*================================================
 			SCREEN MAX-WIDTH: 900PX;
@@ -323,6 +332,10 @@ footer {
 	}
 	#contact form h1 {
 		font-size: 1.5em;
+	}
+	
+	footer{
+		position: unset;
 	}
 
 	#about_us .text{
