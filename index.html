@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Heaven</title>
+	<link rel="stylesheet" type="text/css" href="project.css">
+	<script src="https://kit.fontawesome.com/ab41cdb3b8.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#icon').click(function(){
+				$('nav').toggleClass('show');
+				$('ul').toggleClass('show');
+				$('body').toggleClass('show');
+				$('img').toggleClass('show');
+				$('video').toggleClass('show');
+				$('#about_us').toggleClass('show');
+				$('h1').toggleClass('show');
+				$('table').toggleClass('show');
+			})
+		});
+	</script>
+</head>
+<body>
+	<nav>
+
+		<label class="logo">Haven</label>
+		<form>
+			<ul>
+				<li><a class="active" href="index.html">მთავარი</a></li>
+				<li><a href="contact.html">კონტაქტი</a></li>
+				<li><a href="#">გალერეა</a></li>
+			</ul>
+		</form>
+		
+		<label id="icon">
+			<i class="fas fa-bars"></i>
+		</label>
+	</nav>
+	<img id="first_img" src="img/first.png" alt="first image">
+	<div id="about_us">
+		<img src="img/second.png">
+		<div class="text">
+			<h2>ჩვენს შესახებ</h2>
+			<p>ჩვენი ვებ-საიტები საუკეთესო საშუალებაა თქვენი მომხმარებლებისა და კლიენტებისთვის ღირებული სერვისის მიწოდებისთვის და ეს შესანიშნავი საშუალებაა რათა ისინი დაბრუნდენ თქვენთან როცა დასჭირდებათ თქვენი პროდუქტი. <br> <br>თუ თქვენ გეგმავთ ბაზრის და ბიზნესის განვიტარებას, ვებ-საიტი უნდა იყოს თქვენი პირველი პრიორიტეტი. <br> <br> ჩვენ გვესმის მიზეზები და თქვენი საჭიროება, თუ როგორ შეიძლება შევუწყოთ ხელი თქვენი ბიზნესის განვითარებას.</p>
+		</div>		
+	</div>
+	<video autoplay controls poster="img/thumbnail.jpg">
+		<source src="Video/Skydiving_Montage.mp4" type="video/mp4">
+	</video>
+
+	<div id="services">
+		<h1>ჩვენი მომსახურებები</h1>
+		<table>
+			<tr id="services_img">
+				<th><img src="img/service_1.png"></th>
+				<th><img src="img/service_2.png"></th>
+				<th><img src="img/service_3.png"></th>
+			</tr>
+			<tr id="services_head_text">
+				<th>24/7 ხელმისაწვდომი</th>
+				<th>მაღალი ხარისხის მომსახურება</th>
+				<th>უსაფრთხო და საიმედო</th>
+			</tr>
+			<tr id="services_text">
+				<th>ჩვენი 24/7 ტექნიკური დახმარების სერვისი წამყვანი თაობის ერთ-ერთი საუკეთესო დამხმარე მომსახურებაა. 24/7 მხარდაჭერამ გადაჭრა ათასობით მომხმარებლის კომპიუტერის/ქსელის პრობლემები წარმატებით და შეძლო მომხმარებლების დაკმაყოფილება.
+				</th>
+				<th>შექმნა კარგი მნიშვნელოვანია, რადგან ვებ საიტი ხშირად არის თქვენი პირველი შთაბეჭდილება, რომელიც გაძლევთ პოტენციურ კლიენტებს. თუ მათ გიპოვნეს ძებნის შედეგად ან იმ ლინკით, რომელიც მათ მეგობარმა მისცა, თქვენი ვებ-საიტი იქნება მათთან კონტაქტის პირველი წყარო.
+				</th>
+				<th>ჩვენ მუდმივად ვაკვირდებით თქვენს პროდუქტს, რომ აღმოვაჩინოთ ხარვეზები უსაფრთხოებაში. ჩვენი უსაფრთხოების სერვისი იცავს თქვენი ბრენდის რეპუტაციას და მომხარებლებს ექსპლუატაციისგან. ჩვენ ვირჩევთ საუკეთესო გამოსავალს თქვენი პროდუქტის დასაცავად.
+				</th>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		<div class="footer_content">
+			<ul class="social">
+				<li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="https://google.com"><i class="fab fa-google"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer_bottom">
+			<p>copyright &copy;2021. designed by <span>Aleksandre Sajaia</span></p>
+		</div>
+	</footer>
+	
+</body>
+</html>
