@@ -490,11 +490,11 @@ footer {
 
 	#gallery img{
 	width: 40%;
-	height: 25%;
-	padding: 2%;
-	filter: grayscale(100%);
-	cursor: pointer;
-}
+	}
+	
+	#lightbox img{
+	max-width: 90%;
+	}
 
 }
 /*================================================
