@@ -173,7 +173,7 @@ function validationForm(){
     }
 
 	if (!errorFlag) {
-		success.innerText = "შეტყობინება წარმატებით გაიგზავნა";
+		success.innerText = "ვიზიტი დაჯავშნილია";
 	}
 }
 
