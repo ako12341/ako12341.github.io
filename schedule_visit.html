@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Heaven-Shedule a visit</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://kit.fontawesome.com/ab41cdb3b8.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#icon').click(function(){
+				$('nav').toggleClass('show');
+				$('ul').toggleClass('show');
+				$('body').toggleClass('show');
+				$('img').toggleClass('show');
+				$('video').toggleClass('show');
+				$('#about_us').toggleClass('show');
+				$('h1').toggleClass('show');
+				$('table').toggleClass('show');
+			})
+		});
+	</script>
+	<style type="text/css">
+		body{
+			background: #3498db;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+
+		<label class="logo">Haven</label>
+		<form>
+			<ul>
+				<li><a href="index.html">მთავარი</a></li>
+				<li><a href="contact.html">კონტაქტი</a></li>
+				<li><a href="gallery.html">გალერეა</a></li>
+				<li><a class="active" href="schedule_visit.html">დაჯავშნე ვიზიტი</a></li>
+			</ul>
+		</form>
+		
+		<label id="icon">
+			<i class="fas fa-bars"></i>
+		</label>
+	</nav>
+	<br>
+	<div class="shedule_visit">
+		<h1>ვიზიტის დაჯავშნა</h1>
+		<form id="visitor_information" onbutton="validationForm(); event.preventDefult()">
+			<div class="shedule_content">
+				<label for="name">სახელი:</label>
+				<input type="text" id="nam" placeholder="სახელი">
+				<br>
+				<small class="error"></small>
+
+				<label for="lastname">გვარი:</label>
+				<input type="text" id="lastname" placeholder="გვარი">
+				<br>
+				<small class="error"></small>
+
+				<label for="birthday">დაბადების თარიღი:</label>
+				<select name="day" id="day">
+					<option value="">დღე</option>
+				</select>
+				<select name="month" id="month">
+					<option value="">თვე</option>
+				</select>
+				<select name="year" id="year">
+					<option value="">წელი</option>
+				</select>
+				<br>
+				<small class="error"></small>
+
+				<label for="email">ემაილი:</label>
+				<input type="text" id="email" placeholder="ემაილი">
+				<br>
+				<small class="error"></small>
+
+				<label for="service">მომსახურება:</label>
+				<select name="service" id="servi">
+					<option value="">მომსახურება</option>
+				</select>
+				<br>
+				<small class="error"></small>
+
+				<label for="shedule_time">ვიზიტის დრო:</label>
+				<select name="day" id="dayy">
+					<option value="">დღე</option>
+				</select>
+				<select name="month" id="monthh">
+					<option value="">თვე</option>
+				</select>
+				<select name="hours" id="hours">
+					<option value="">საათი</option>
+				</select>
+				<br>
+				<small class="error"></small>
+
+				<div class="shedul">
+					<input type="button" value="დაჯავშნა" onclick="return validationForm()">
+					<br>
+					<p id="success"></p>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<footer>
+		<div class="footer_content">
+			<ul class="social">
+				<li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="https://google.com"><i class="fab fa-google"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer_bottom">
+			<p>copyright &copy;2021. designed by <span>Aleksandre Sajaia</span></p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="schedule_visit.js"></script>
+</body>
+</html>

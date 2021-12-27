@@ -1,0 +1,611 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	font-family: montserrat;
+	
+}
+img {
+	width: 100%;
+}
+
+video{
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 20px;
+}
+
+/*================================================
+				NAVIGATION
+================================================*/
+nav{
+	height: 80px;
+	widows: 100%;
+	background: #2f3640;
+}
+
+label.logo{
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	padding: 0 10%;
+	line-height: 80px;
+	position: absolute;
+}
+
+nav ul {
+	float: right;
+	margin-right: 40px;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 8px;
+	line-height: 80px;
+}
+
+nav a {
+	color: white;
+	font-size: 18px;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+
+}
+
+a.active, a:hover{
+	border: 1px solid white;
+	transition: .5s;
+}
+
+nav #icon{
+	color: white;
+	font-size: 30px;
+	line-height: 80px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+/*================================================
+				NAVIGATION
+================================================*/
+
+/*================================================
+				ABOUT US
+================================================*/
+#about_us img{
+	width: 50%;
+	float: right;
+	padding-top: 10px;
+}
+
+#about_us .text h2{
+	text-align: center;
+}
+
+#about_us .text {
+	margin-left: 20%;
+	margin-right: 50%;
+	padding-top: 100px;
+}
+
+/*================================================
+				ABOUT US
+================================================*/
+
+/*================================================
+				CONTACT
+================================================*/
+#contact h1 {
+	text-align: center;
+	color: white;
+}
+
+#contact form{
+	width: 100%;
+	background: #3498db;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+#contact form label{
+	display: block;
+	margin: 20px 0 20px 20%;
+	color: white;
+}
+
+#contact form input#email, #name, #message{
+	margin: 0 0 0 20%;
+	width: 60%;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	resize: none;
+	border: none;
+	border-bottom: 1px solid #D3D3D3;
+	background: #3498db;
+	color: white;
+}
+
+.center input {
+	margin: 20px 0 20px 35%;
+	background: #2f3640;
+	width: 30%;
+	padding: 10px;
+	border-radius: 30px;
+	color: white;
+	cursor: pointer;
+}
+
+.error{
+	color: red;
+	margin-left: 20%;
+}
+
+.error-border{
+	border-bottom: 1px solid red;
+}
+
+#success{
+	color: yellow;
+	text-align: center;
+}
+/*================================================
+				CONTACT
+================================================*/
+
+/*================================================
+				GALLERY
+================================================*/
+#gallery{
+	margin-left: 2%;
+}
+
+#gallery img{
+	width: 20%;
+	height: 25%;
+	padding: 2%;
+	filter: grayscale(100%);
+	cursor: pointer;
+}
+
+#gallery img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+	transition: 1s;
+}
+
+#gallery a{
+	border: none;
+}
+
+#lightbox{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+}
+
+#lightbox.active{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lightbox img{
+	max-width: 50%;
+	max-height: 50%;
+	padding: 4px;
+	background-color: black;
+	border: 2px solid white;
+}
+/*================================================
+				GALLERY
+================================================*/
+
+/*================================================
+				VISIT
+================================================*/
+.shedule_visit h1{
+	text-align: center;
+}
+
+.shedule_visit #visitor_information label{
+	display: block;
+	padding: 5px;
+}
+
+.shedule_visit #visitor_information{
+	width: 40%;
+	background: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+.shedule_visit #visitor_information .shedule_content{
+	margin: 30px 0 30px 20%;
+	padding: 2%;
+	font-size: 20px;
+}
+
+.shedule_visit #visitor_information .shedule_content input[type="text"]{
+	border-radius: 100px;
+	border: 1px solid blue;
+	padding: 2%;
+	width: 50%;
+	background: yellow;
+	margin-bottom: 20px;
+}
+
+.shedule_visit #visitor_information .shedule_content input:focus{
+	background: pink;
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.shedule_visit #visitor_information .shedule_content select{
+	padding: 2%;
+	border-radius: 50px;
+	background: yellow;
+}
+
+.shedule_visit #visitor_information .shedule_content select:focus{
+	border-radius: 0;
+	transform: scale(1.1);
+	transition: 0.2s;
+	background: pink;
+}
+
+.shedule_visit #visitor_information .shedule_content .shedul input{
+	font-size: 20px;
+	border: 1px solid red;
+	border-radius: 100px;
+	padding: 1.5%;
+	margin-left: 20%;
+	margin-top: 20px;
+	padding: 2%;
+	background: royalblue;
+	cursor: pointer;
+	color: yellow;
+}
+
+.shedule_visit #visitor_information .shedule_content .shedul input:focus{
+	transform: none;
+}
+
+.shedule_visit #visitor_information .shedule_content .shedul input:hover{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.shedule_visit #visitor_information .shedule_content .error{
+	margin-left: 0%;
+}
+
+.shedule_visit #visitor_information .shedule_content #success{
+	color: darkgreen;
+	margin-left: -40%;
+}
+/*================================================
+				VISIT
+================================================*/
+
+/*================================================
+				SERVICES
+================================================*/
+#services table{
+	width: 70%;
+	margin-left: 15%;
+}
+
+#services h1{
+	margin-top: 40px;
+	text-align: center;
+}
+
+#services #services_img{
+	margin-left: 12%;
+}
+
+#services #services_img img {
+	width: 75%;
+	padding: 10px 2%;
+}
+
+#services #services_head_text{
+	font-size: 25px;
+}
+
+#services #services_text th{
+	text-align: center;
+	vertical-align: top;
+	padding: 5px 5%;
+}
+
+/*================================================
+				SERVICES
+================================================*/
+
+/*================================================
+					FOOTER
+================================================*/
+footer {
+	position: absolute;
+	background: #2f3640;
+	height: auto;
+	width: 100%;
+	color: white;
+	margin-top: 20px;
+}
+
+.social{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social li{
+	margin: 1% 1%;
+	padding: 1%;
+}
+
+.social a{
+	text-decoration: none;
+	color: white;
+	border-style: none;
+}
+
+.social a i{
+	font-size: 200%;
+	transition: color .4s ease;
+}
+
+.social a:hover i{
+	color: aqua;
+}
+
+.footer_bottom{
+	background: #000;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer_bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.footer_bottom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+/*================================================
+					FOOTER
+================================================*/
+
+/*================================================
+			SCREEN MIN-WIDTH: 1050PX;
+================================================*/
+@media (min-width: 1050px){
+	#about_us .text{
+		padding-top: 100px;
+		margin-left: 180px;
+		margin-right: 50%;
+	}
+
+	#about_us img{
+		width: 60%;
+		float: right;
+		padding-top: 10px;
+	}
+
+}
+
+/*================================================
+			SCREEN MIN-WIDTH: 1050PX;
+================================================*/
+
+/*================================================
+			SCREEN MAX-WIDTH: 1050PX;
+================================================*/
+@media (max-width: 1050px){
+	#about_us .text{
+		padding-top: 40px;
+		margin-left: 100px;
+
+	}
+
+}
+
+/*================================================
+			SCREEN MAX-WIDTH: 1050PX;
+================================================*/
+
+/*================================================
+			SCREEN MAX-WIDTH: 900PX;
+================================================*/
+@media (max-width:  900px){
+	nav a{
+		font-size: 13px;
+	}
+	#about_us .text{
+		padding-top: 20px;
+		font-size: .8em;
+		margin-left: 60px;
+	}
+	#contact form h1 {
+		font-size: 2em;
+	}
+
+}
+/*================================================
+			SCREEN MAX-WIDTH: 900PX;
+================================================*/
+
+/*================================================
+			SCREEN MAX-WIDTH: 750PX;
+================================================*/
+@media (max-width: 750px){
+	nav #icon{
+		display: block;
+	}
+	#contact form h1 {
+		font-size: 1.5em;
+	}
+
+	footer{
+		position: unset;
+	}
+	#about_us .text{
+		padding-top: 20px;
+		font-size: .5em;
+		margin-left: 10px;
+		margin-right: 47%;
+	}
+
+	nav ul {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background-color: #2f3640;	
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+
+	}
+
+	nav a{
+		font-size: 20px;
+	}
+
+	a.active,a:hover{
+		border: none;
+		color: #3498db;
+	}
+
+	nav ul.show{
+		left: 0;
+	}
+
+	body.show{
+		background: #2f3640;
+	}
+
+	img.show{
+		visibility: hidden;
+	}
+
+	#about_us.show{
+		visibility: hidden;
+	}
+
+	video.show{
+		visibility: hidden;
+	}
+
+	h1.show{
+		visibility: hidden;
+	}
+
+	table.show{
+		visibility: hidden;
+	}
+
+	nav.show{
+		background-color: #3498db;
+	}
+	span.show{
+		visibility: hidden;
+	}
+
+	#services table{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#services h1{
+		margin-top: 40px;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#services #services_img{
+		margin-left: 1%;
+	}
+
+	#services #services_img img {
+		width: 75%;
+		padding: 5px 1%;
+	}
+
+	#services #services_head_text{
+		font-size: 10px;
+	}
+
+	#services #services_text th{
+		text-align: center;
+		vertical-align: top;
+		font-size: 5px;
+	}
+
+	#gallery{
+		margin-left: 8%;
+	}
+
+	#gallery img{
+		width: 40%;
+	}
+
+	#lightbox img{
+		max-width: 90%;
+	}
+
+	.shedule_visit #visitor_information{
+		width: 90%;
+	}
+
+	.shedule_visit #visitor_information .shedule_content{
+		margin: 30px 0 30px 5%;
+		padding: 2%;
+		font-size: 20px;
+	}
+
+	.shedule_visit #visitor_information .shedule_content .shedul input{
+		margin-left: 30%;
+	}
+
+	.shedule_visit #visitor_information .shedule_content #success{
+		color: darkgreen;
+		margin-left: 0%;
+	}
+}
+/*================================================
+			SCREEN MAX-WIDTH: 750PX;
+================================================*/
